@@ -62,7 +62,7 @@ This dataset consists of the government's response to the pandemic through diffe
 ## Repository Distribution
 
 ```
-data-512-homework_1/
+data-512-project/
   |- README.md
   |- LICENSE
   |- data
