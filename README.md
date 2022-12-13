@@ -74,11 +74,10 @@ data-512-homework_1/
   |- plots
     |- Common-Analysis-Visual.png
     |- mobility-cases-lag.png
-    |- mulit-linear-reg-result.png
+    |- mulit-linear-reg-for-mobility.png
     |- var-model-summary.png
     |- multi-linear-reg-for-cases.png
-  |- submissions
-    |- 
+  |- DATA 512- Project Report.pdf
   |- notebooks
     |- Part 1- Jupyter notebook.ipynb
     |- Part2- Extensive Analysis.ipynb
@@ -134,7 +133,7 @@ For research question: 2) Which of the different government responses/policies h
 The multi-linear regression model has been fitted with the following variables data to analyze the impact of government policies on mobility.
 Independent variables: 'mask_required',' facial_coverings ', school_closing’, workplace_closing ', 'cancel_public_restrictions_on_gatherings ’, 'public_transport’, ‘stay_at_home_requirements'
 
-![Alt](./plots/mulit-linear-reg-result.png)
+![Alt](./plots/mulit-linear-reg-for-mobility.png)
 
 From the results of the model fitted for mobility type – visit to grocery and pharmacy we see that government restrictions (apart from mask mandates) like  stay at home requirements, canceling of public events and public transport close and restriction of gatherings have the most impact in reducing human mobility. For example, we see that when stay-at-home orders are in place, keeping all other variables constant, we see that there is an 8.8% decrease in mobility to grocery and pharmacy stores.
 
