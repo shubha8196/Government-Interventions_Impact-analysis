@@ -75,6 +75,7 @@ data-512-homework_1/
     |- Common-Analysis-Visual.png
     |- mobility-cases-lag.png
     |- mulit-linear-reg-result.png
+    |- var-model-summary.png
   |- submissions
     |- 
   |- notebooks
@@ -154,6 +155,8 @@ To access the mobility impact on the spread of COVID-19 in Jefferson County, we 
 ![Alt](./plots/mobility-cases-lag.png)
 
 Variables for the VAR models: percentage mobility change ( mobility of different types, such as visits to grocery and pharmacies, visits to retail and recreation stores, visits to workspaces, visits to residential areas, and visits to transit hubs)) and percent daily case rate change.
+
+![Alt](./plots/var-model-summary.png)
 
 The results of the fitted model indicate indicate that mobility to grocery and pharmacy places has a significant 7-day lagged impact on daily case rates. That is, reducing the mobility to grocery and pharmacy by 1% reduced the daily case rate by 4.5% after a duration of 7 days (holding all other variables constant)
 
