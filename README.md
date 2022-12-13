@@ -98,19 +98,37 @@ All of the methodological methods discussed below are human-centered in nature. 
 
 
 For Common Analysis
-![Visualization](./plots/Common Analysis-Visual.png)
+
+A time series plot has been created to visualize the variations in the COVID-19 daily infection rate in Jefferson County (state of Kentucky) during and beyond the periods when mask mandate policies were established in Jefferson County. The mask mandate policies data w.r.t Jefferson County is also incorporated into this visual. The changepoints (represented by the red dotted lines in the graph) indicating the abrupt variations in the rate of infections i.e., timestamps where the change in inflected cases is significant from the confirmed cases dataset made available for Jefferson County are calculated using Pruned Exact Linear Time (PELT) Test as mentioned in methodology.
 
 ![plot](./plots/Common Analysis-Visual.png)
+
+Through this visual, we can see that the masks were made mandatory from mid-June 2020 to mid-July 2021 (7/10/2020 to 6/10/2021) in Jefferson County. It is interesting to see that before and during the start of the mask mandate, we see that cases per day spread was kind of controlled and during the central period (Oct 2020 to Feb 2021) of the mask mandate the spread seems to move towards an uncontrolled trend. However, the same cannot be said during the end of the mask mandate. We see a controlled spread during the beginning of the end of the mask mandate period (i.e., from Mar 2021 to June 2021). If we were to consider the masking mandate to be the sole reason for the trend period, one can say the effects of removing the mask mandate can be observed in a little over the next 30 days’ time period (i.e., from Aug 2021) were the cases per day are starting to spread uncontrolled again. The voluntary masking survey shows us that 60.2% of the people in this county always wore masks and 91.5% of people wore masks more than sometimes (including sometimes survey points). This timeframe (July 2 - July 14) was when CDC had nationwide guidelines for wearing masks. So, technically our assumption is people in the county were following CDC guidelines religiously when there was a state mandate. Hence, these non-uniform variations in the case rates during different mask mandate periods lead me to infer that perhaps the mask mandates are not the only factor impacting the case rate variations. Additionally, moving away from the impact of mask mandates, we see that there is a huge uncontrolled spike in the case rates for Jefferson County at the beginning of the year 2022. One explanation for this can be the rise of the Omicron variant detection in several counties of the United States at the beginning of 2022.
+
+
 For research question: 1) How has mobility changed with the government restrictions and policies in place?
 
+Results from the dependent t-test
+1) Mobility Type - Visits to retail and recreation point; test statistic=-5.87, pvalue=7.1e-08; Hypothesis action- Reject null hypothesis
+2) Mobility Type - Visits to grocery and pharmacy; test statistic=1.72, pvalue=0.088; Hypothesis action-  Don’t reject null hypothesis
+3) Mobility Type - Visits to transit stations; test statistic=-2.17, pvalue=0.032; Hypothesis action- Reject null hypothesis
+4) Mobility Type - Visits to workplace; test statistic=-8.12, pvalue=2.2e-012; Hypothesis action- Reject null hypothesis
+5) Mobility Type - Visits to residential areas; test statistic=10.49, pvalue=2.69e-17; Hypothesis action- Reject null hypothesis
+
+From the above results, we see that the p-value is less than the significance level of 0.05 for all mobility types except for mobility corresponding to visits to grocery and pharmacies. This indicated that there is a significant difference in the percentage change in mobility of most types of post-introduction of mask mandates. To look at how different the mobility changes are when other government restrictions are in place we look to the results of the multi-linear regression model next.
 
 
 
+For research question: 2) Which of the different government responses/policies have influenced mobility the most?
 
+The multi-linear regression model has been fitted with the following variables data to analyze the impact of government policies on mobility.
+Independent variables: 'mask_required',' facial_coverings ', school_closing’, workplace_closing ', 'cancel_public_restrictions_on_gatherings ’, 'public_transport’, ‘stay_at_home_requirements'
 
+[image]
 
+From the results of the model fitted for mobility type – visit to grocery and pharmacy we see that government restrictions (apart from mask mandates) like  stay at home requirements, canceling of public events and public transport close and restriction of gatherings have the most impact in reducing human mobility. For example, we see that when stay-at-home orders are in place, keeping all other variables constant, we see that there is an 8.8% decrease in mobility to grocery and pharmacy stores.
 
-
+On fitting similar models to the rest of the mobility types we see that stay-at-home orders and the canceling of public events orders are the most common influential government restrictions for reducing the mobility of all types.
 
 
 
