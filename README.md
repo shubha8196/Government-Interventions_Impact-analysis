@@ -69,10 +69,18 @@ data-512-homework_1/
     |- RAW_us_confirmed_cases.csv
     |- mask-use-by-county.csv
     |- U.S._State_and_Territorial_Public_Mask_Mandates_From_April_10__2020_through_August_15__2021_by_County_by_Day.zip
-  |- Part 1- Jupyter notebook.ipynb
-  |- Part 1- Collective Analysis - Reflection Statement.pdf
-  |- Part 1- Collective Analysis - Visualization Explanation.pfd
-  |- Visualization.png
+    |- US_KY_21111.zip
+    |- oxford-government-response_ky.csv
+  |- plots
+    |- Common Analysis-Visual.png
+    |- mobility-cases-lag.png
+    |- mulit-linear-reg-result.png
+  |- submissions
+    |- 
+  |- notebooks
+    |- Part 1- Jupyter notebook.ipynb
+    |- Part2- Extensive Analysis.ipynb
+
 ```
 
 ## Jupyter Notebooks
@@ -94,7 +102,7 @@ Part2- Extensive Analysis.ipynb: Contains the code used for analysis and plottin
 All of the methodological methods discussed below are human-centered in nature. To begin, the proposed study design is oriented toward individuals. It uses human mobility behaviors to make decisions, which are subsequently utilized to promote policy health care, and government mandates improvements for the public. It employs data created by individuals for people. It also employs a participatory design in which data from users' inquiries is blended into the created answer in real-time. This immediate, quick, and low-cost feedback will help in the proactive updating of policy suggestions based on people's activities. Certain ethical issues are also included in this analytical process. It is based on data from Jefferson County inhabitants and is free of any other demographic biases. To protect people's privacy, no personal information or particular search searches are used in the study. The approach and analysis developed are also replicable and can be used for any data set containing people's mobility patterns and COVID-19 region responses.
 
 
-## Findings
+## Key Findings
 
 
 For Common Analysis
