@@ -78,6 +78,7 @@ data-512-homework_1/
 ## Jupyter Notebooks
 
 Part 1- Jupyter notebook.ipynb : Contains the code used for analysis and plotting of the visualization for common analysis
+
 Part2- Extensive Analysis.ipynb: Contains the code used for analysis and plotting of the visualizations needed for the extensive analysis to access the impact Analysis of human mobility and government interventions effects on the spread of COVID-19
 
 
