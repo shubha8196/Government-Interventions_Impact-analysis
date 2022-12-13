@@ -97,7 +97,11 @@ All of the methodological methods discussed below are human-centered in nature. 
 ## Findings
 
 
+For Common Analysis
+![Visualization](/Visualization.png)
 
+
+For research question: 1) How has mobility changed with the government restrictions and policies in place?
 
 
 
