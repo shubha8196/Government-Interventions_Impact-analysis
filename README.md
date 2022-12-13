@@ -124,11 +124,32 @@ For research question: 2) Which of the different government responses/policies h
 The multi-linear regression model has been fitted with the following variables data to analyze the impact of government policies on mobility.
 Independent variables: 'mask_required',' facial_coverings ', school_closing’, workplace_closing ', 'cancel_public_restrictions_on_gatherings ’, 'public_transport’, ‘stay_at_home_requirements'
 
-[image]
+[image] mulit-linear-reg-result.png
 
 From the results of the model fitted for mobility type – visit to grocery and pharmacy we see that government restrictions (apart from mask mandates) like  stay at home requirements, canceling of public events and public transport close and restriction of gatherings have the most impact in reducing human mobility. For example, we see that when stay-at-home orders are in place, keeping all other variables constant, we see that there is an 8.8% decrease in mobility to grocery and pharmacy stores.
 
 On fitting similar models to the rest of the mobility types we see that stay-at-home orders and the canceling of public events orders are the most common influential government restrictions for reducing the mobility of all types.
+
+
+For research question: 3) Which of the different government responses/policies have influenced the COVID-19 spread the most?
+
+To understand the impact of government policies on the spread of Covid-19 in Jefferson county we fit another multi-linear regression model with the following variables.
+Independent variables: 'mask_required',' facial_coverings ', school_closing’, workplace_closing ', 'cancel_public_restrictions_on_gatherings ’, 'public_transport’, ‘stay_at_home_requirements
+Response variable: daily cases count (moved 7-day averaged count)
+
+The results of the fitted model indicate that most government restrictions have an impact on reducing daily case count. Predominantly, we see that when the stay-at-home restriction is mandated, holding all other variables constant we see a 6.2% reduction in daily case counts. Similarly, we see a 2.1% and 1.27% reduction in daily cases (holding all other variables constant) when the cancellation of public events and public transport closing mandates respectively are put in place. 
+
+For research question: 4) How have different mobility habits influenced the spread of the COVID-19 pandemic? Has reduction/increase in mobility had a significant impact on case reduction/increase?
+
+To access the mobility impact on the spread of COVID-19 in Jefferson County, we first plot the time series graphs of the percentage change in mobility (mobility of type- visits to grocery and pharmacy is displayed in the plot below) and change in daily case rate and their corresponding change points calculated through change point detection. The shaded red blocks in the graph show that there is a lag gap in the changes between mobility and the daily case rate. Note: Similar lags have been observed in other mobility types as well. Hence, we look to the results of the VAR model to infer how much of a lagged influence mobility change has on the COVID-19 spread.
+
+[image]mobility-cases-lag
+
+Variables for the VAR models: percentage mobility change ( mobility of different types, such as visits to grocery and pharmacies, visits to retail and recreation stores, visits to workspaces, visits to residential areas, and visits to transit hubs)) and percent daily case rate change.
+
+The results of the fitted model indicate indicate that mobility to grocery and pharmacy places has a significant 7-day lagged impact on daily case rates. That is, reducing the mobility to grocery and pharmacy by 1% reduced the daily case rate by 4.5% after a duration of 7 days (holding all other variables constant)
+
+We see similar results obtained when the VAR model is fitted with other types of mobility. For example, we see that mobility to transit stations also has a significant 7-day lagged impact on daily case rates. That is, reducing the mobility to transit stations by 1% reduced the daily case rate by 0.84% after a duration of 7 days (holding all other variables constant). Mobility to retail and recreation spots has a significant 10-day lagged impact on daily case rates. That is, reducing the mobility to retail and recreation spots by 1% reduced the daily case rate by 0.59% after a duration of 7 days (holding all other variables constant). Overall we see an average lag impact of 8.5 days on the case rates when all types of mobility are considered.
 
 
 
