@@ -76,6 +76,7 @@ data-512-homework_1/
     |- mobility-cases-lag.png
     |- mulit-linear-reg-result.png
     |- var-model-summary.png
+    |- multi-linear-reg-for-cases.png
   |- submissions
     |- 
   |- notebooks
@@ -145,6 +146,8 @@ For research question: 3) Which of the different government responses/policies h
 To understand the impact of government policies on the spread of Covid-19 in Jefferson county we fit another multi-linear regression model with the following variables.
 Independent variables: 'mask_required',' facial_coverings ', school_closing’, workplace_closing ', 'cancel_public_restrictions_on_gatherings ’, 'public_transport’, ‘stay_at_home_requirements
 Response variable: daily cases count (moved 7-day averaged count)
+
+![Alt](./plots/multi-linear-reg-for-cases.png)
 
 The results of the fitted model indicate that most government restrictions have an impact on reducing daily case count. Predominantly, we see that when the stay-at-home restriction is mandated, holding all other variables constant we see a 6.2% reduction in daily case counts. Similarly, we see a 2.1% and 1.27% reduction in daily cases (holding all other variables constant) when the cancellation of public events and public transport closing mandates respectively are put in place. 
 
