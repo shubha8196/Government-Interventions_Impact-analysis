@@ -16,9 +16,27 @@ The Kentucky state government (like other state governments) has implemented sev
 
 The main motivation of this analysis is to truly understand the effects of government interventions and human mobility on the spread of COVID-19 and to identify how these interventions and human mobility, in general, had a significant impact in reducing the COVID-19 spread in Jefferson County, Kentucky, US.
 
+## Research questions
+Below are the set of Research questions and Hypothesis the study tries to answer. (All the questions listed before are pertaining to Jefferson County, KY)
+1) How has mobility changed with the government restrictions and policies in place?
+Hypothesis:
+Null: The mean difference in the percentage change in mobility prior to and post-mask mandates is not different from 0.
+Alternative: The mean difference in the percentage change in mobility prior to and post-mask mandates is different from 0.
+
+2) Which of the different government responses/policies have influenced mobility the most?
+Hypothesis: 
+Mobility (of a particular type, say mobility to drug stores or pharmacies) reduced by X% post a varied combination of government policy implementation on the travel ban, masking regulations, and vaccination mandates
+
+3) Which of the different government responses/policies have influenced the COVID-19 spread the most?
+Hypothesis: 
+COVID-19 cases reduced by X% post a varied combination of government policy implementation on the travel ban, masking regulations, and vaccination mandates
+
+4) How have different mobility habits influenced the spread of the COVID-19 pandemic? Has reduction/increase in mobility had a significant impact on case reduction/increase?
+Hypothesis: 
+A time lag correlation between the different types of human mobility and the covid-19 cases, identifies the mobility contributions towards the spread.
 
 
-## Data Utilized
+## Data Utilized/ Input files
 
 Data Source 1: [COVID-19 Data from John Hopkins University ](https://www.kaggle.com/datasets/antgoldbloom/covid19-data-from-john-hopkins-university?select=RAW_us_confirmed_cases.csv)
 
@@ -57,18 +75,25 @@ data-512-homework_1/
   |- Visualization.png
 ```
 
-## Input files 
+## Jupyter Notebooks
 
-
-
-## Jupyter Notebook
-
-
+Part 1- Jupyter notebook.ipynb : Contains the code used for analysis and plotting of the visualization for common analysis
+Part2- Extensive Analysis.ipynb: Contains the code used for analysis and plotting of the visualizations needed for the extensive analysis to access the impact Analysis of human mobility and government interventions effects on the spread of COVID-19
 
 
 ## Issues/ Special considerations
+1) Moving average (over 7 days) of the daily cases counts data also incorporated in the analaysis and visualization approach to account for case counts not being updated for every single day in a week to help smooth out-trend information by creating a constantly updated average value in the visualization.
+2) Apart from the CDC masking mandate data, Jefferson County's official website stating the masking policies have also been considered in the output visualization.
+3) The COVID-19 Mobility dataset demonstrates how visits to sites like grocery shops and parks have altered (during the pandemic) from a pre-pandemic baseline value. The baseline is the median value on the relevant weekday from January 3 to February 6, 2020. As time passes and we move further away from the baseline period, Jefferson County populations might vary due to relocation or new regional and remote working options. Google’s understanding of categorized places might also have changed. For example, the same value today and in April 2020 might not indicate the same behavior or adherence; it might be that Google has updated information about shops and restaurants in the region or that fewer people live there now. These differences could shift the values up or down over long time periods. Here, I would like to highlight that this potential variation in the population over time which in turn affects the changes in the mobility change rates is not considered during my analysis due to a lack of information on new baselines at different periods during the pandemic.
+4) Also note that the inclusion of Google data in the computation of mobility changes is dependent on user choices, connection and if it fulfills Google's privacy limits. As a result, when the data does not match Google's quality and privacy requirements, there may be empty entries for specific locations and dates. It's also worth noting that this data is based on users who have enabled Location History in their Google Accounts, thus it reflects a sample group of users from any given region. As with all samples, this may or may not accurately represent the behavior of a larger population. 
 
 
+## Human-Centered Considerations
+
+All of the methodological methods discussed below are human-centered in nature. To begin, the proposed study design is oriented toward individuals. It uses human mobility behaviors to make decisions, which are subsequently utilized to promote policy health care, and government mandates improvements for the public. It employs data created by individuals for people. It also employs a participatory design in which data from users' inquiries is blended into the created answer in real-time. This immediate, quick, and low-cost feedback will help in the proactive updating of policy suggestions based on people's activities. Certain ethical issues are also included in this analytical process. It is based on data from Jefferson County inhabitants and is free of any other demographic biases. To protect people's privacy, no personal information or particular search searches are used in the study. The approach and analysis developed are also replicable and can be used for any data set containing people's mobility patterns and COVID-19 region responses.
+
+
+## Findings
 
 
 
