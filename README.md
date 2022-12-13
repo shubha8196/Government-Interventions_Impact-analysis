@@ -20,6 +20,24 @@ The main motivation of this analysis is to truly understand the effects of gover
 
 ## Data Utilized
 
+[Pageviews API](https://wikitech.wikimedia.org/wiki/Analytics/AQS/Pageviews)
+Data Source 1: [COVID-19 Data from John Hopkins University ](https://www.kaggle.com/datasets/antgoldbloom/covid19-data-from-john-hopkins-university?select=RAW_us_confirmed_cases.csv)
+
+This dataset consists of the cumulative confirmed case counts were gathered from the Kaggle repository of the John Hopkins University; Raw United States confirmed COVID-19 cases dataset. 
+
+
+Data Source 2: U.S. State and Territorial Public Mask Mandate from April 10, 2020, through August 15, 2021, by County by Day 
+
+This dataset consists of the data for masking mandates was sourced from the CDC dataset of masking mandates by county. 
+Link - https://github.com/aaliyahfiala42/data-512-a7#us-state-and-territorial-public-mask-mandates-from-april-10-2020-through-august-15-2021-by-county-by-day-mask-use-by-countycsv 
+https://data.cdc.gov/Policy-Surveillance/U-S-State-and-Territorial-Public-Mask-Mandates-Fro/62d6-pm5i
+Data Source 3: COVID-19 Mobility dataset from Google
+The dataset shows how visits to places, such as grocery stores, public transport hubs, and parks, to name a few, have changed since Feb 2020 compared to a baseline. The baseline is the median value, for the corresponding day of the week, during the 5-week period Jan 3–Feb 6, 2020. 
+Link- https://github.com/GoogleCloudPlatform/covid-19-open-data/blob/main/docs/tablemobility.Md
+Data Source 4: Covid-19 Government Response dataset from the University of Oxford
+This dataset consists of the government's response to the pandemic through different policies like school closures, restrictions on travel/ internal movement, and workplace closures, to name a few, including a stringency index associated with each government response.
+Link- https://github.com/GoogleCloudPlatform/covid-19-open-data/blob/main/docs/tablegovernment-response.md 
+
 
 ## Repository Distribution
 
