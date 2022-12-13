@@ -20,7 +20,6 @@ The main motivation of this analysis is to truly understand the effects of gover
 
 ## Data Utilized
 
-[Pageviews API](https://wikitech.wikimedia.org/wiki/Analytics/AQS/Pageviews)
 Data Source 1: [COVID-19 Data from John Hopkins University ](https://www.kaggle.com/datasets/antgoldbloom/covid19-data-from-john-hopkins-university?select=RAW_us_confirmed_cases.csv)
 
 This dataset consists of the cumulative confirmed case counts were gathered from the Kaggle repository of the John Hopkins University; Raw United States confirmed COVID-19 cases dataset. 
