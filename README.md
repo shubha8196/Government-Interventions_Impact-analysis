@@ -3,7 +3,7 @@
 
 
 # Impact of human mobility and government interventions effects on the spread of COVID-19
-County Assigned: Jefferson County (Kentucky, US)
+County Assigned: Jefferson County (Kentucky,US)
 
 
 ## Goal
