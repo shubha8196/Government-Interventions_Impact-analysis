@@ -2,7 +2,7 @@
 ![contributors](https://img.shields.io/github/contributors/shubha8196/data-512-homework_1.svg) ![codesize](https://img.shields.io/github/languages/code-size/shubha8196/data-512-homework_1.svg)
 
 
-# Impact Analysis of human mobility and government interventions effects on the spread of COVID-19
+# Impact of human mobility and government interventions effects on the spread of COVID-19
 County Assigned: Jefferson County (Kentucky, US)
 
 
